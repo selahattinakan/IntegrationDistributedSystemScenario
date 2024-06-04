@@ -1,0 +1,7 @@
+1-If the RabbitMQ system crashes, our entire insert system will also crash.
+2-When big size and many data are queued, the resources used by the RabbitMQ system may be insufficient,in this case, performance degradation or errors may happen.
+3-If the correct configuration is not made, data loss may happen as a result of message loss.
+4-In order to maintain data consistency, it may be necessary to write Business code into RabbitMQ transactions. Coding costs may happen.
+5-Costs such as security/maintenance/update may arise for the server where RabbitMQ is running. (you are integrating a new system into your system)
+
+
